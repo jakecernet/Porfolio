@@ -1,0 +1,59 @@
+.dark{
+    --bg: #000;
+    --text: #fff;
+}
+
+.light{
+    --bg: #fff;
+    --text: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+.slide a {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    color: var(--text)
+}
+
+.slide a::after {
+    content: "";
+    width: 90%;
+    margin-left: 5%;
+    transform: scaleX(0);
+    height: 5px;
+    border-radius: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--text);
+    transform-origin: bottom;
+    transition: transform .2s ease-out;
+    position: absolute;
+}
+
+.slide a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom
+}
+
+.color2{
+    color: var(--text2);
+}
