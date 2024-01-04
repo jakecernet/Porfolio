@@ -78,7 +78,7 @@ header .navbar .burger {
     color: var(--text);
     letter-spacing: 2px;
     margin: 0 6px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .welcome p {
@@ -88,6 +88,7 @@ header .navbar .burger {
     margin: 10px 0;
     display: flex;
     flex-wrap: wrap;
+    font-weight: 330;
 }
 
 /* Arrow */

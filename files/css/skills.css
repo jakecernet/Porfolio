@@ -2,23 +2,19 @@
     display: block;
 }
 
-#skills .title{
-    text-align: left;
-}
-
-#skills p{
+#skills p {
     text-align: left;
     font-size: 20px;
     margin: 0 0 20px 0;
+    font-weight: 300;
 }
 
-#skills a{
+#skills a {
     text-decoration: none;
     color: var(--text2);
 }
 
 #skills ul {
-    list-style: none;
     padding: 0;
     margin: 0;
     margin-left: 40px;

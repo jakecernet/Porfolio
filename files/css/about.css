@@ -5,16 +5,11 @@
     flex-wrap: wrap;
 }
 
-#about .title {
-    margin-bottom: 20px;
-    text-align: left;
-    font-size: 25px;
-}
-
 #about .content p {
     margin-bottom: 20px;
     text-align: left;
     font-size: 20px;
+    font-weight: 300;
 }
 
 #about .content img {

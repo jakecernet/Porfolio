@@ -61,7 +61,7 @@ body {
 }
 
 .color2 {
-    color: var(--text2)!important;
+    color: var(--text2) !important;
 }
 
 .contents {
@@ -78,6 +78,8 @@ section {
 .title {
     margin: 20px;
     font-size: 25px;
+    text-align: left;
+    color: var(--text2);
 }
 
 .top {
