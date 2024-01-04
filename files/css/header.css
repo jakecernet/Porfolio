@@ -17,9 +17,8 @@ header .navbar {
 header .navbar .logo {
     font-size: 30px;
     font-weight: 600;
-    text-transform: uppercase;
     letter-spacing: 2px;
-    color: #fff;
+    color: var(--text);
     text-decoration: none;
 }
 
@@ -35,7 +34,7 @@ header .navbar nav ul {
 
 header .navbar nav ul li {
     text-decoration: none;
-    color: #fff;
+    color: var(--text);
     font-size: 18px;
     font-weight: 500;
     margin: 10px;
@@ -76,7 +75,7 @@ header .navbar .burger {
 
 .welcome .main h1 {
     font-size: 50px;
-    color: #fff;
+    color: var(--text);
     letter-spacing: 2px;
     margin: 0 6px;
     font-weight: 600;
@@ -84,7 +83,7 @@ header .navbar .burger {
 
 .welcome p {
     font-size: 20px;
-    color: #fff;
+    color: var(--text);
     letter-spacing: 1px;
     margin: 10px 0;
     display: flex;
@@ -161,7 +160,7 @@ header .navbar .burger {
     header .navbar .burger {
         display: block;
         font-size: 40px;
-        color: #fff;
+        color: var(--text);
     }
 
     .welcome .main h1 {
