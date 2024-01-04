@@ -104,3 +104,16 @@ section {
     color: var(--text);
     font-size: 30px;
 }
+
+footer {
+    margin-top: 10vh;
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+    color: var(--text);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--text2);
+}
