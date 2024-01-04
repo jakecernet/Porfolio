@@ -60,18 +60,11 @@
 .slider .element a {
     text-decoration: none;
     color: var(--text) !important;
-    background: var(--item_background);
-    padding: 15px 20px;
-    border-radius: 10px;
     margin: 20px;
     max-width: 300px;
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-
-.slider .element a:hover {
-    box-shadow: 0 0 15px rgb(0, 0, 0);
 }
 
 .fa-html5 {

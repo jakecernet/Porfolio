@@ -45,11 +45,11 @@ body {
     width: 90%;
     margin-left: 5%;
     transform: scaleX(0);
-    height: 5px;
+    height: 2px;
     border-radius: 1px;
     bottom: 0;
     left: 0;
-    background: var(--text);
+    background: radial-gradient(circle, var(--text), 98%, transparent);
     transform-origin: bottom;
     transition: transform .2s ease-out;
     position: absolute;
