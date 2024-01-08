@@ -1,6 +1,9 @@
 function switchTheme() {
 	document.body.classList.toggle("dark");
 	document.body.classList.toggle("light");
+
+	document.getElementById("switch").classList.toggle("fa-sun");
+	document.getElementById("switch").classList.toggle("fa-moon");
 }
 
 function showNav() {
