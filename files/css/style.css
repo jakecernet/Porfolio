@@ -20,7 +20,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -51,7 +51,7 @@ body {
     border-radius: 1px;
     bottom: 0;
     left: 0;
-    background: radial-gradient(circle, var(--text), 98%, transparent);
+    background: var(--text);
     transform-origin: bottom;
     transition: transform .2s ease-out;
     position: absolute;
@@ -59,7 +59,7 @@ body {
 
 .slide a:hover::after {
     transform: scaleX(1);
-    transform-origin: bottom
+    transform-origin: bottom;
 }
 
 .color2 {
@@ -67,7 +67,7 @@ body {
 }
 
 .contents {
-    margin-top: 60vh;
+    margin-top: 55vh;
 }
 
 section {
@@ -81,7 +81,6 @@ section {
     margin: 20px;
     font-size: 25px;
     text-align: left;
-    color: var(--text2);
 }
 
 .top {
@@ -98,7 +97,6 @@ section {
     z-index: 1000;
 }
 
-
 .top a img {
     width: 100%;
     height: 100%;
@@ -110,10 +108,8 @@ footer {
     padding: 20px;
     text-align: center;
     font-size: 15px;
-    color: var(--text);
 }
 
 footer a {
     text-decoration: none;
-    color: var(--text2);
 }

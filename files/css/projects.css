@@ -12,13 +12,11 @@
 
 .slider {
     overflow-x: scroll;
-    scroll-snap-align: start;
     scroll-snap-type: x mandatory;
     display: flex;
     flex-direction: row;
     border-radius: 10px;
     gap: 20px;
-    padding: 20px;
 }
 
 .slider .element {
@@ -32,7 +30,6 @@
     align-items: center;
     flex-direction: column;
     scroll-snap-align: start;
-    scroll-snap-stop: always;
     border-radius: 10px;
     width: 100%;
     border: 1px solid var(--text);
@@ -41,24 +38,13 @@
 .slider .element h2 {
     margin: 10px;
     color: var(--text);
-    font-weight: 500;
+    font-weight: 450;
 }
 
 .slider .element h3 {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0;
     color: var(--text2);
     font-weight: 380;
-}
-
-.slider .element span {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    flex-direction: row;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
 }
 
 .slider .element a {
@@ -67,7 +53,6 @@
     margin: 20px;
     max-width: 300px;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: row;
     gap: 10px;
@@ -75,14 +60,5 @@
 
 .slider .element a img {
     width: 40px;
-    border-radius: 10px;
     filter: var(--filter);
-}
-
-
-.fa-globe,
-.fa-github {
-    font-size: 40px;
-    margin: 10px;
-    color: var(--text);
 }

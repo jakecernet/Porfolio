@@ -1,3 +1,22 @@
+.navbar,
+.navbar nav {
+    display: flex
+}
+
+.arrow a,
+.navbar .logo,
+.navbar nav ul li {
+    text-decoration: none;
+}
+
+.arrow a,
+.navbar .logo,
+.navbar nav ul li,
+.welcome .main h1,
+.welcome p {
+    color: var(--text)
+}
+
 header {
     max-width: 1400px;
     margin: auto;
@@ -5,7 +24,6 @@ header {
 }
 
 .navbar {
-    display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 0;
@@ -15,18 +33,12 @@ header {
 .navbar .logo {
     font-size: 30px;
     font-weight: 600;
-    letter-spacing: 2px;
-    color: var(--text);
-    text-decoration: none
+    letter-spacing: 2px
 }
 
 .navbar .logo a img {
     width: 50px;
     height: 50px
-}
-
-.navbar nav {
-    display: flex
 }
 
 .navbar nav ul {
@@ -36,12 +48,10 @@ header {
 }
 
 .navbar nav ul li {
-    text-decoration: none;
-    color: var(--text);
     font-size: 18px;
     font-weight: 500;
     margin: 10px;
-    transition: all .3s ease
+    transition: .3s
 }
 
 .navbar .burger {
@@ -50,7 +60,7 @@ header {
 }
 
 .switcher {
-    transition: all .3s ease;
+    transition: .3s;
     cursor: pointer;
     rotate: 0deg
 }
@@ -59,6 +69,7 @@ header {
     rotate: 90deg
 }
 
+.hidden,
 .switcher::after {
     display: none
 }
@@ -67,10 +78,6 @@ header {
     width: 30px;
     height: 30px;
     filter: var(--filter)
-}
-
-.hidden {
-    display: none
 }
 
 .welcome {
@@ -90,7 +97,6 @@ header {
 
 .welcome .main h1 {
     font-size: 50px;
-    color: var(--text);
     letter-spacing: 2px;
     margin: 0 6px;
     font-weight: 500
@@ -98,7 +104,6 @@ header {
 
 .welcome p {
     font-size: 20px;
-    color: var(--text);
     letter-spacing: 1px;
     margin: 10px 0;
     display: flex;
@@ -111,13 +116,11 @@ header {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    animation: arrow 4s infinite
+    animation: 4s infinite arrow
 }
 
 .arrow a {
-    text-decoration: none;
-    color: var(--text);
-    transition: all .3s ease
+    transition: .3s
 }
 
 .arrow a:hover {
@@ -131,16 +134,14 @@ header {
 }
 
 @keyframes arrow {
-    0% {
+
+    0%,
+    100% {
         transform: translateX(-50%) translateY(0)
     }
 
     50% {
         transform: translateX(-50%) translateY(20px)
-    }
-
-    100% {
-        transform: translateX(-50%) translateY(0)
     }
 }
 
@@ -161,7 +162,7 @@ header {
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        transition: all .3s ease;
+        transition: .3s;
         z-index: 1
     }
 
