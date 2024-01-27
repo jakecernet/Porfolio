@@ -13,7 +13,7 @@
     --background: linear-gradient(125deg, #000, #01193b);
     --item_background: rgba(3, 6, 17, 0.308);
     --glow: 0 0 10px #b6eada;
-    --filter: invert(1) hue-rotate(180deg);
+    --filter: invert(98%) sepia(19%) saturate(4354%) hue-rotate(172deg) brightness(97%) contrast(103%);
 }
 
 * {
