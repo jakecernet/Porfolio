@@ -54,7 +54,11 @@
 .slider .element span {
     margin-top: 20px;
     margin-bottom: 10px;
-    font-size: 2em;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .slider .element a {
@@ -63,17 +67,18 @@
     margin: 20px;
     max-width: 300px;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
+    flex-direction: row;
+    gap: 10px;
 }
 
-.fa-html5 {
-    color: #e34f26;
+.slider .element a img {
+    width: 40px;
+    border-radius: 10px;
+    filter: var(--filter);
 }
 
-.fa-css3-alt {
-    color: #264de4;
-}
 
 .fa-globe,
 .fa-github {

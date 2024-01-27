@@ -11,11 +11,15 @@
 			property="og:description"
 			content="Hi! I'm a front-end learning Vegovec and this is my website." />
 		<meta property="og:url" content="cernetic.cc" />
-		<meta property="og:image" content="https://cernetic.cc/files/icons/logo-2.webp" />
+		<meta
+			property="og:image"
+			content="https://cernetic.cc/files/icons/logo-2.webp" />
 		<meta property="og:site_name" content="Jaka Černetič" />
 		<meta property="og:locale" content="sl_SI" />
 		<meta name="theme-color" content="#317EFB" />
-		<link rel="shortcut icon" href="https://cernetic.cc/files/icons/logo-4.webp" />
+		<link
+			rel="shortcut icon"
+			href="https://cernetic.cc/files/icons/logo-4.webp" />
 		<title>Jaka Černetič</title>
 		<link rel="icon" href="https://cernetic.cc/files/icons/logo-4.webp" />
 		<link rel="manifest" href="files/manifest.json" />
@@ -25,13 +29,15 @@
 		<link rel="stylesheet" href="files/css/skills.css" />
 		<link rel="stylesheet" href="files/css/projects.css" />
 		<link rel="stylesheet" href="files/css/friends.css" />
-        <link rel="stylesheet" href="files/css/contact.css" />
+		<link rel="stylesheet" href="files/css/contact.css" />
 	</head>
 	<body class="dark">
 		<header>
 			<div class="navbar">
 				<div class="logo slide">
-					<a href="/" id="text2" aria-label="logo"><img src="files/icons/logo-2.webp" alt="logo"></a>
+					<a href="/" id="text2" aria-label="logo"
+						><img src="files/icons/logo-2.webp" alt="logo"
+					/></a>
 				</div>
 				<nav class="slide nav">
 					<ul>
@@ -51,12 +57,15 @@
 							<a href="#contact" class="nav-item">Contact</a>
 						</li>
 						<li onclick="switchTheme()">
-							<a class="fa-solid fa-sun switcher" id="switch"></a>
+							<a class="switcher" id="switch">
+								<img src="files/svg/sun.svg" alt="sun" id="sun" />
+								<img src="files/svg/moon.png" alt="moon" id="moon" class="hidden"/>
+							</a>
 						</li>
 					</ul>
 				</nav>
 				<div class="burger" onclick="showNav()">
-					<i class="fa-solid fa-bars"></i>
+					<img src="files/svg/burger.svg" alt="burger" />
 				</div>
 			</div>
 			<div class="welcome">
@@ -69,13 +78,13 @@
 		</header>
 		<div class="top">
 			<a alt="link" href="#top" title="Go back to the top">
-				<span class="fa-solid fa-arrow-up"></span>
+				<img src="files/svg/up.svg" alt="up arrow" />
 			</a>
 		</div>
 		<div class="arrow">
-			<a href="#about" title="Go down"
-				><i class="fa-solid fa-chevron-down"></i
-			></a>
+			<a href="#about" title="Go down">
+				<img src="files/svg/down-arrow.svg" alt="down arrow" />
+			</a>
 		</div>
 		<div class="contents">
 			<section id="about">
@@ -97,9 +106,7 @@
 						been hooked ever since. I'm currently learning ReactJS,
 						NodeJS and advanced Arduino programming.
 					</p>
-					<img
-						src="files/dron.webp"
-						alt="Me" />
+					<img src="files/dron.webp" alt="Me" />
 				</div>
 			</section>
 			<section id="skills">
@@ -141,82 +148,73 @@
 					<div class="element">
 						<h2>My website</h2>
 						<h3>This website</h3>
-						<span>
-							<i class="fa-brands fa-html5"></i>
-							<i class="fa-brands fa-css3-alt"></i>
-							<i
-								class="fa-brands fa-js-square"
-								title="JavaScript"
-								style="color: #f0db4f"></i>
-						</span>
+						<!-- <span>
+							<img src="files/svg/html-5.svg" alt="HTML5" />
+							<img src="files/svg/css3.svg" alt="CSS3" />
+							<img
+								src="files/svg/javascript.svg"
+								alt="JavaScript" />
+						</span> -->
 						<a alt="link" href="/" target="_blank">
-							<i class="fa-solid fa-globe"></i>
+							<img src="files/svg/web.svg" alt="web" />
 							Website
 						</a>
 						<a
 							alt="link"
 							href="https://github.com/jakecernet/Porfolio"
-							target="_blank"
-							><i class="fa-brands fa-github"></i>
+							target="_blank">
+							<img src="files/svg/github.svg" alt="githublol" />
 							Github
 						</a>
 					</div>
 					<div class="element">
 						<h2>KrokyPlus</h2>
 						<h3>Food ordering service improvment</h3>
-						<span>
-							<i
-								class="fa-brands fa-react"
-								style="color: #61dbfb"></i>
-							<i
-								class="fa-brands fa-node-js"
-								style="color: #3c873a"></i>
-							<i
-								class="fa-brands fa-js-square"
-								title="JavaScript"
-								style="color: #f0db4f"></i>
-						</span>
+						<!-- <span>
+							<img src="files/svg/react.svg" alt="ReactJS" />
+							<img src="files/svg/nodejs.svg" alt="NodeJS" />
+							<img
+								src="files/svg/javascript.svg"
+								alt="JavaScript" />
+						</span> -->
 						<a
 							alt="link"
 							href="https://krokyplus.si"
 							target="_blank">
-							<i class="fa-solid fa-globe"></i>
+							<img src="files/svg/web.svg" alt="web" />
 							Website
 						</a>
 						<a
 							alt="link"
 							href="https://github.com/jakecernet/KrokyPlus"
 							target="_blank">
-							<i class="fa-brands fa-github"></i>
+							<img src="files/svg/github.svg" alt="githublol" />
 							Github
 						</a>
 					</div>
 					<div class="element">
 						<h2>Youtube Downloader</h2>
 						<h3>Online YouTube to MP3 converter</h3>
-						<span>
-							<i class="fa-brands fa-html5"></i>
-							<i class="fa-brands fa-css3-alt"></i>
-							<i
-								class="fa-brands fa-js-square"
-								title="JavaScript"
-								style="color: #f0db4f"></i>
-							<i
-								class="fa-brands fa-node-js"
-								style="color: #3c873a"></i>
-						</span>
+						<!-- <span>
+							<img src="files/svg/html-5.svg" alt="HTML5" />
+							<img src="files/svg/css3.svg" alt="CSS3" />
+							<img
+								src="files/svg/javascript.svg"
+								alt="JavaScript" />
+							<img src="files/svg/nodejs.svg" alt="NodeJS" />
+						</span> -->
 						<a
 							alt="link"
 							href="https://downloader.cernetic.cc"
 							target="_blank"
-							><i class="fa-solid fa-globe"></i>
+							><img src="files/svg/web.svg" alt="web" />
 							Website
 						</a>
 						<a
 							alt="link"
 							href="https://github.com/jakecernet/YoutubeDownloader"
 							target="_blank"
-							><i class="fa-brands fa-github"></i>
+							><img src="files/svg/github.svg" alt="githublol" />
 							Github
 						</a>
 					</div>
@@ -224,22 +222,19 @@
 						<h2>IDK Bot</h2>
 						<h3>
 							Discord bot with commands like YouTube downloader,
-							joke generator, audio player and more.
+							audio player and more.
 						</h3>
-						<span>
-							<i
-								class="fa-brands fa-node-js"
-								style="color: #3c873a"></i>
-							<i
-								class="fa-brands fa-js-square"
-								title="JavaScript"
-								style="color: #f0db4f"></i>
-						</span>
+						<!-- <span>
+							<img src="files/svg/nodejs.svg" alt="NodeJS" />
+							<img
+								src="files/svg/javascript.svg"
+								alt="JavaScript" />
+						</span> -->
 						<a
 							alt="link"
 							href="https://github.com/jakecernet/DiscordBot"
 							target="_blank"
-							><i class="fa-brands fa-github"></i>
+							><img src="files/svg/github.svg" alt="githublol" />
 							Github
 						</a>
 					</div>
@@ -324,26 +319,25 @@
 				<ul>
 					<li>
 						<a href="pages/discord.html" target="_blank">
-							<i class="fa-brands fa-discord"></i>
+							<img src="files/svg/discord.svg" alt="discorda" />
 							Discord
 						</a>
 					</li>
 					<li>
 						<a href="pages/git.html" target="_blank">
-							<i class="fa-brands fa-github"></i>
+							<img src="files/svg/github.svg" alt="githublol" />
 							Github
 						</a>
 					</li>
 				</ul>
 			</section>
-            <footer>
-                <p>© 2023 Jaka Černetič</p>
-                <a href="https://old.cernetic.cc" target="_blank">View the old version of this website</a>
-            </footer>
+			<footer>
+				<p>© 2023 Jaka Černetič</p>
+				<a href="https://old.cernetic.cc" target="_blank"
+					>View the old version of this website</a
+				>
+			</footer>
 		</div>
-		<script
-			src="files/scripts/b94e1e9a72.js"
-			crossorigin="anonymous" defer></script>
 		<script src="files/scripts/index.js"></script>
 		<script src="files/scripts/animation.js"></script>
 	</body>

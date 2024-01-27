@@ -18,14 +18,18 @@
 #contact ul li a {
     text-decoration: none;
     color: var(--text);
+    display: flex;
+    align-items: center;
+}
+
+#contact ul li a img {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    filter: var(--filter);
 }
 
 #contact p a {
     text-decoration: none;
     color: var(--text2);
-}
-
-#contact ul li .fa-github {
-    font-size: inherit;
-    margin: 0;
 }
