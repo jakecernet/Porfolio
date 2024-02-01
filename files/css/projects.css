@@ -21,12 +21,12 @@
 
 .slider .element {
     background: var(--item_background);
-    padding: 20px;
+    padding: 10px 20px;
     font-size: 1.2em;
     color: var(--text);
     text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     scroll-snap-align: start;
