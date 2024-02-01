@@ -27,7 +27,8 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px 0;
-    margin: 0 20px
+    margin: 0 20px;
+    position: relative;
 }
 
 .navbar .logo {
@@ -49,7 +50,9 @@ header {
 .navbar nav ul {
     display: flex;
     list-style: none;
-    align-items: center
+    align-items: center;
+    justify-content: center;
+    transition: .3s
 }
 
 .navbar nav ul li {
@@ -67,7 +70,11 @@ header {
 .switcher {
     transition: .3s;
     cursor: pointer;
-    rotate: 0deg
+    rotate: 0deg;
+    margin: 0;
+    padding: 0!important;
+    height: 24px;
+    width: 24px;
 }
 
 .switcher:hover {
@@ -80,9 +87,8 @@ header {
 }
 
 .switcher img {
-    width: 30px;
-    height: 30px;
-    filter: var(--filter)
+    width: 100%;
+    filter: var(--filter);
 }
 
 .welcome {
