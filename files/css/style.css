@@ -1,7 +1,7 @@
 .light {
     --text: #111;
     --text2: #202027;
-    --background: linear-gradient(135deg, #71e4de 0%, #fdc3d6 100%);
+    --background: linear-gradient(135deg, #71e4de -10%, #fdc3d6 100%);
     --item_background: rgba(255, 255, 255, 0.671);
     --glow: 0 0 10px rgb(0, 0, 0);
     --filter: invert(0) hue-rotate(0deg);
@@ -83,7 +83,7 @@ section {
     text-align: left;
 }
 
-p{
+p {
     max-width: 800px;
 }
 
@@ -127,4 +127,8 @@ footer {
 
 footer a {
     text-decoration: none;
+}
+
+footer p {
+    max-width: 100%;
 }
