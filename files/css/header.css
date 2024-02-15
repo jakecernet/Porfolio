@@ -20,7 +20,8 @@
 header {
     max-width: 1400px;
     margin: auto;
-    padding: 0 20px
+    padding: 0 20px;
+    height: 100vh;
 }
 
 .navbar {
@@ -72,7 +73,7 @@ header {
     cursor: pointer;
     rotate: 0deg;
     margin: 0;
-    padding: 0!important;
+    padding: 0 !important;
     height: 24px;
     width: 24px;
 }

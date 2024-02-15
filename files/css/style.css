@@ -66,8 +66,8 @@ body {
     color: var(--text2) !important;
 }
 
-.contents {
-    margin-top: 55vh;
+main {
+    position: relative;
 }
 
 section {
