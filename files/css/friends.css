@@ -2,22 +2,18 @@
 .friends ul {
     margin: 0;
     padding: 0;
-    margin-left: 40px;
+    margin-left: 60px;
     list-style: none;
 }
 
-#friends ul li,
-.friends ul li {
+#friends ul a,
+.friends ul a {
     display: inline-block;
     width: 100%;
-    margin: 0 0 20px 0;
+    margin: 0 0 15px 0;
     padding: 0;
     font-size: 20px;
     font-weight: 300;
-}
-
-#friends ul li a,
-.friends ul li a {
     text-decoration: none;
     color: var(--text);
 }
