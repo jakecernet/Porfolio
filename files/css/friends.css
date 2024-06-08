@@ -17,3 +17,8 @@
     text-decoration: none;
     color: var(--text);
 }
+
+#friends ul a:hover,
+.friends ul a:hover {
+    color: rgb(0, 98, 255);
+}
