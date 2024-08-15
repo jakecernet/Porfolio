@@ -79,12 +79,130 @@ section {
 
 .title {
     margin: 20px;
+    margin-left: -20px;
     font-size: 25px;
     text-align: left;
 }
 
 p {
     max-width: 800px;
+}
+
+#about {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+#about .content p {
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#about .content img {
+    justify-self: center;
+    max-width: 800px;
+    object-fit: cover;
+    border-radius: 10px;
+    bottom: 20px;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    #about {
+        flex-direction: column;
+    }
+
+    #about .content img {
+        max-width: 100%;
+    }
+}
+
+#skills {
+    display: block;
+}
+
+#skills p {
+    text-align: left;
+    font-size: 20px;
+    margin: 0 0 20px 0;
+    font-weight: 300;
+}
+
+#skills a {
+    text-decoration: none;
+    color: var(--text2);
+}
+
+#skills ul {
+    padding: 0;
+    margin: 0;
+    margin-left: 40px;
+}
+
+#skills ul li {
+    margin: 10px 0;
+}
+
+#friends ul,
+.friends ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#friends ul a,
+.friends ul a {
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 15px 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+    color: var(--text);
+}
+
+#friends ul a:hover,
+.friends ul a:hover {
+    color: rgb(0, 98, 255);
+}
+
+#contact ul {
+    margin: 0;
+    padding: 0;
+    margin-left: 40px;
+    margin-top: 20px;
+    list-style: none;
+}
+
+#contact ul a {
+    display: inline-block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+}
+
+#contact ul a img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    filter: var(--filter);
+}
+
+#contact p a {
+    text-decoration: none;
+    color: var(--text2);
 }
 
 .top {
