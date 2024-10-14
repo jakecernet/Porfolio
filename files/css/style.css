@@ -4,7 +4,9 @@
     --background: linear-gradient(135deg, #71e4de -10%, #fdc3d6 100%);
     --item_background: rgba(255, 255, 255, 0.671);
     --glow: 0 0 10px rgb(0, 0, 0);
-    --filter: invert(0) hue-rotate(0deg);
+    --filter: invert(11%) sepia(16%) saturate(426%) hue-rotate(201deg) brightness(104%) contrast(97%);
+    --hover: #111;
+    --filter_hover: invert(0%) hue-rotate(0deg);
 }
 
 .dark {
@@ -14,6 +16,8 @@
     --item_background: rgba(3, 6, 17, 0.308);
     --glow: 0 0 10px #b6eada;
     --filter: invert(98%) sepia(19%) saturate(4354%) hue-rotate(172deg) brightness(97%) contrast(103%);
+    --hover: #0062ff;
+    --filter_hover: invert(36%) sepia(86%) saturate(6793%) hue-rotate(215deg) brightness(104%) contrast(103%);
 }
 
 * {
@@ -168,8 +172,9 @@ p {
 }
 
 #friends ul a:hover,
-.friends ul a:hover {
-    color: rgb(0, 98, 255);
+.friends ul a:hover,
+#contact ul li a:hover {
+    color: var(--hover);
 }
 
 #contact ul {
@@ -181,7 +186,6 @@ p {
 }
 
 #contact ul a {
-    display: inline-block;
     width: 100%;
     margin: 10px 0;
     padding: 0;
@@ -198,6 +202,10 @@ p {
     height: 30px;
     margin-right: 10px;
     filter: var(--filter);
+}
+
+#contact ul a:hover img {
+    filter: var(--filter_hover);
 }
 
 #contact p a {
