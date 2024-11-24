@@ -21,12 +21,19 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat',
+        system-ui,
+        Avenir,
+        Helvetica,
+        Arial,
+        sans-serif;
     transition: 0.3s;
 }
 
 header {
-    nav {}
+    nav {
+        width: 100%;
+    }
 
     main {
         display: flex;
@@ -65,16 +72,31 @@ header {
 
                 a {
                     text-decoration: none;
-                    
+
                     img {
-                        transition: 0.3s;
+                        transition: 0.25s;
                         filter: invert(13%) sepia(0%) saturate(0%) hue-rotate(161deg) brightness(98%) contrast(98%);
                         width: 2.8rem;
                     }
                 }
 
                 a:hover img {
-                    filter: invert(2%) sepia(1%) saturate(212%) hue-rotate(314deg) brightness(97%) contrast(89%);
+                    filter: invert(1) sepia(1%) saturate(212%) hue-rotate(314deg) brightness(97%) contrast(89%);
+                }
+            }
+        }
+
+        section.right {
+            .title {
+                h1 {
+                    font-size: 4rem;
+                    font-weight: 100;
+                }
+
+                p {
+                    font-size: 1.8rem;
+                    font-weight: 200;
+                    margin-top: 1rem;
                 }
             }
         }
