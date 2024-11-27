@@ -188,11 +188,11 @@ section.skills {
 }
 
 .dropdown {
-    max-width: 20%;
-
     ul {
         display: flex;
         justify-content: center;
+        align-items: center;
+        flex-direction: column;
         gap: 1rem;
 
         li {
@@ -203,9 +203,10 @@ section.skills {
             font-size: 1rem;
             font-weight: 250;
             display: flex;
-            align-items: center;
+            align-items: flex-start !important;
             flex-direction: column;
             gap: 0.5rem;
+            width: 40rem;
 
             .liTitle {
                 display: flex;
@@ -225,6 +226,31 @@ section.skills {
                 height: 0;
                 overflow: hidden;
                 transition: 0.3s;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 0.8rem;
+
+                p {
+                    font-size: 1rem;
+                    font-weight: 200;
+                    margin-top: 1rem;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: var(--light);
+                    font-size: 1rem;
+                    font-weight: 200;
+                    transition: 0.3s;
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+
+                    img {
+                        width: 1.5rem;
+                    }
+                }
             }
         }
     }
@@ -239,7 +265,7 @@ section.skills {
     height: 30px;
     border-radius: 50%;
     cursor: pointer;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     z-index: 1000;
