@@ -14,6 +14,9 @@
     --dark: #0c0c0c;
     --light: #f5f5f5;
     --greenish: #071f07;
+    --background: linear-gradient(125deg, #000, #01193b);
+    --item_background: rgba(3, 6, 17, 0.308);
+    --glow: 0 0 10px #b6eada;
 }
 
 .theme {
@@ -162,11 +165,6 @@ section.skills {
         }
 
         ul {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1rem;
-            margin-top: 1rem;
-
             li {
                 list-style: none;
                 padding: 0.8rem 1rem;
@@ -189,57 +187,48 @@ section.skills {
     }
 }
 
-.slider {
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    display: flex;
-    flex-direction: row;
-    border-radius: 10px;
-    gap: 20px;
-}
+.dropdown {
+    max-width: 20%;
 
-.slider .element {
-    background: var(--item_background);
-    padding: 10px 20px;
-    font-size: 1.2em;
-    color: var(--text);
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    scroll-snap-align: start;
-    border-radius: 10px;
-    width: 100%;
-    border: 1px solid var(--text);
-}
+    ul {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
 
-.slider .element h2 {
-    margin: 10px;
-    color: var(--text);
-    font-weight: 450;
-}
+        li {
+            list-style: none;
+            padding: 0.8rem 1rem;
+            border-radius: 0.8rem;
+            background: #ffffff2c;
+            font-size: 1rem;
+            font-weight: 250;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 0.5rem;
 
-.slider .element h3 {
-    margin: 10px 0;
-    color: var(--text2);
-    font-weight: 380;
-}
+            .liTitle {
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                gap: 0.5rem;
+                width: 100%;
+                cursor: pointer;
 
-.slider .element a {
-    text-decoration: none;
-    color: var(--text) !important;
-    margin: 10px 0 20px 0;
-    max-width: 300px;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    gap: 10px;
-}
+                img {
+                    filter: invert(1);
+                    transition: 0.3s;
+                }
+            }
 
-.slider .element a img {
-    width: 40px;
-    filter: var(--filter);
+            .liContents {
+                height: 0;
+                overflow: hidden;
+                transition: 0.3s;
+            }
+        }
+    }
+
 }
 
 .top {
