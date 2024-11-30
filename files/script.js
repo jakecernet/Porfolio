@@ -35,7 +35,6 @@ function closeAll(exceptId) {
 	}
 }
 
-// Initialize all elements to be closed on page load
 document.addEventListener("DOMContentLoaded", function () {
 	var elements = document.getElementsByClassName("liContents");
 	var arrows = document.getElementsByClassName("arrow");
@@ -46,3 +45,15 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	}
 });
+
+function measureHeight() {
+	var element = document.getElementById("leftText");
+	var img = document.querySelector(".img");
+	var height = element.clientHeight;
+	img.style.height = height - 30 + "px";
+}
+
+if (window.innerWidth > 1360) {
+	window.addEventListener("resize", measureHeight);
+	document.addEventListener("DOMContentLoaded", measureHeight);
+}
