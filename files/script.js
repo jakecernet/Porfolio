@@ -12,7 +12,7 @@ function expand(id) {
 	var e = document.getElementById(id);
 	var arrow = document.getElementById(id + "arrow");
 	if (e.style.height === "0px" || e.style.height === "") {
-		e.style.height = "10rem";
+		e.style.height = "8rem";
 		arrow.style.transform = "rotate(-90deg)";
 	} else {
 		e.style.height = "0px";
