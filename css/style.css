@@ -282,7 +282,7 @@ header {
                 gap: 0.8rem;
 
                 p {
-                    font-size: 1rem;
+                    font-size: 1.2rem;
                     font-weight: 200;
                     margin-top: 1rem;
                 }
@@ -317,18 +317,18 @@ header {
 
             li {
                 list-style: none;
-                padding: 0.8rem 1rem;
-                border-radius: 0.8rem;
-                background: #ffffff2c;
-                font-size: 1rem;
-                font-weight: 250;
                 display: flex;
                 align-items: flex-start !important;
                 flex-direction: column;
                 gap: 0.5rem;
                 width: 40rem;
-
+                
                 a {
+                    padding: 0.8rem 1rem;
+                    border-radius: 0.8rem;
+                    background: #ffffff2c;
+                    font-size: 1rem;
+                    font-weight: 250;
                     text-decoration: none;
                     color: var(--light);
                     font-size: 1rem;
@@ -461,6 +461,14 @@ footer {
             .left,
             .right {
                 width: 100%;
+
+                h2 {
+                    font-size: 2rem;
+                }
+
+                p {
+                    font-size: 1.2rem;
+                }
             }
 
             .right {
@@ -477,7 +485,7 @@ footer {
                 ul {
                     li {
                         padding: 0.5rem 0.8rem;
-                        font-size: 0.8rem;
+                        font-size: 1rem;
 
                         img {
                             width: 1.2rem;
@@ -493,17 +501,17 @@ footer {
             li {
                 .liTitle {
                     h2 {
-                        font-size: 1.4rem;
+                        font-size: 1.2rem!important;
                     }
 
                     img {
-                        width: 1.2rem;
+                        width: 1rem;
                     }
                 }
 
                 .liContents {
                     p {
-                        font-size: 0.8rem;
+                        font-size: 1rem!important;
                     }
 
                     a {
@@ -526,6 +534,10 @@ footer {
                 li {
                     font-size: 0.8rem;
                     width: 100%;
+
+                    a{
+                        width: 100%;
+                    }
                 }
             }
         }
