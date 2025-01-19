@@ -298,7 +298,7 @@ header {
                     gap: 0.4rem;
 
                     img {
-                        width: 1.8rem;
+                        width: 1.6rem;
                     }
                 }
             }
@@ -319,21 +319,27 @@ header {
                 list-style: none;
                 display: flex;
                 align-items: flex-start !important;
-                flex-direction: column;
+                flex-direction: row;
                 gap: 0.5rem;
                 width: 40rem;
-                
+                padding: 0.8rem 1rem;
+                border-radius: 0.8rem;
+                background: #ffffff2c;
+
                 a {
-                    padding: 0.8rem 1rem;
-                    border-radius: 0.8rem;
-                    background: #ffffff2c;
                     font-size: 1rem;
                     font-weight: 250;
                     text-decoration: none;
                     color: var(--light);
+                    transition: 0.3s;
+                    width: 100%;
+                }
+
+                p {
                     font-size: 1rem;
                     font-weight: 200;
-                    transition: 0.3s;
+                    width: 100%;
+                    text-align: right;
                 }
             }
         }
@@ -501,17 +507,23 @@ footer {
             li {
                 .liTitle {
                     h2 {
-                        font-size: 1.2rem!important;
+                        font-size: 1.2rem !important;
                     }
 
                     img {
                         width: 1rem;
                     }
+
+                    .langs {
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        gap: 0.5rem;
+                    }
                 }
 
                 .liContents {
                     p {
-                        font-size: 1rem!important;
+                        font-size: 1rem !important;
                     }
 
                     a {
@@ -534,9 +546,16 @@ footer {
                 li {
                     font-size: 0.8rem;
                     width: 100%;
+                    display: flex;
+                    align-items: center!important;
 
-                    a{
+                    a {
                         width: 100%;
+                        font-weight: 400;
+                    }
+
+                    p {
+                        font-size: 1rem!important;
                     }
                 }
             }
