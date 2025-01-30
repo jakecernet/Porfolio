@@ -70,10 +70,25 @@ header {
                     box-shadow: 0 0 10px #ffffff4f;
                 }
             }
+        }
+
+        section.right {
+            .title {
+                h1 {
+                    font-size: 4rem;
+                    font-weight: 100;
+                }
+
+                p {
+                    font-size: 1.8rem;
+                    font-weight: 200;
+                    margin-top: 1rem;
+                }
+            }
 
             .links {
                 display: flex;
-                justify-content: center;
+                justify-content: start;
                 gap: 1rem;
                 margin-top: 1.2rem;
 
@@ -89,21 +104,6 @@ header {
 
                 a:hover img {
                     filter: invert(1) sepia(1%) saturate(212%) hue-rotate(314deg) brightness(97%) contrast(89%);
-                }
-            }
-        }
-
-        section.right {
-            .title {
-                h1 {
-                    font-size: 4rem;
-                    font-weight: 100;
-                }
-
-                p {
-                    font-size: 1.8rem;
-                    font-weight: 200;
-                    margin-top: 1rem;
                 }
             }
         }
@@ -427,14 +427,6 @@ footer {
                         height: 30vh;
                     }
                 }
-
-                .links {
-                    a {
-                        img {
-                            width: 2.5rem;
-                        }
-                    }
-                }
             }
 
             section.right {
@@ -447,6 +439,16 @@ footer {
 
                     p {
                         font-size: 1.5rem;
+                    }
+                }
+
+                .links {
+                    justify-content: center;
+
+                    a {
+                        img {
+                            width: 2.5rem;
+                        }
                     }
                 }
             }
@@ -547,7 +549,7 @@ footer {
                     font-size: 0.8rem;
                     width: 100%;
                     display: flex;
-                    align-items: center!important;
+                    align-items: center !important;
 
                     a {
                         width: 100%;
@@ -555,7 +557,7 @@ footer {
                     }
 
                     p {
-                        font-size: 1rem!important;
+                        font-size: 1rem !important;
                     }
                 }
             }
