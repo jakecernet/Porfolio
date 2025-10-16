@@ -13,10 +13,10 @@ function expand(id) {
 	var arrow = document.getElementById(id + "arrow");
 	if (e.style.height === "0px" || e.style.height === "") {
 		e.style.height = "8.5rem";
-		arrow.style.transform = "rotate(-90deg)";
+		arrow.style.transform = "rotate(0deg)";
 	} else {
 		e.style.height = "0px";
-		arrow.style.transform = "rotate(0deg)";
+		arrow.style.transform = "rotate(-90deg)";
 	}
 }
 
@@ -29,7 +29,7 @@ function closeAll(exceptId) {
 			elements[i].style.height = "0px";
 			var currentArrow = document.getElementById(currentId + "arrow");
 			if (currentArrow) {
-				currentArrow.style.transform = "rotate(0deg)";
+				currentArrow.style.transform = "rotate(-90deg)";
 			}
 		}
 	}
@@ -41,9 +41,10 @@ document.addEventListener("DOMContentLoaded", function () {
 	for (var i = 0; i < elements.length; i++) {
 		elements[i].style.height = "0px";
 		if (arrows[i]) {
-			arrows[i].style.transform = "rotate(0deg)";
+			arrows[i].style.transform = "rotate(-90deg)";
 		}
 	}
+	document.getElementById("item4arrow").style.transform = "rotate(-90deg)";
 });
 
 function measureHeight() {
