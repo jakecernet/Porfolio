@@ -1,0 +1,114 @@
+#blob-bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	z-index: -1;
+	pointer-events: none;
+	background: #0b0f14; /* fallback page background, change or remove as needed */
+}
+
+/* wrappers handle position + the JS scroll transform */
+#blob-bg .blob-wrap {
+	position: absolute;
+	will-change: transform;
+}
+
+#blob-bg .blob-wrap-1 {
+	width: 420px;
+	height: 420px;
+	top: -100px;
+	left: -80px;
+}
+#blob-bg .blob-wrap-2 {
+	width: 500px;
+	height: 500px;
+	top: 20%;
+	right: -150px;
+}
+#blob-bg .blob-wrap-3 {
+	width: 380px;
+	height: 380px;
+	bottom: -120px;
+	left: 15%;
+}
+#blob-bg .blob-wrap-4 {
+	width: 320px;
+	height: 320px;
+	bottom: 30%;
+	right: 35%;
+}
+
+/* inner blob handles shape, color, blur, and the idle CSS float animation */
+#blob-bg .blob {
+	position: absolute;
+	inset: 0;
+	border-radius: 50%;
+	filter: blur(80px);
+	opacity: 0.55;
+	will-change: transform;
+}
+
+#blob-bg .blob-1 {
+	background: radial-gradient(circle at 30% 30%, #22d3ee, #0891b2);
+	animation: float1 18s ease-in-out infinite;
+}
+
+#blob-bg .blob-2 {
+	background: radial-gradient(circle at 60% 40%, #34d399, #059669);
+	animation: float2 22s ease-in-out infinite;
+}
+
+#blob-bg .blob-3 {
+	background: radial-gradient(circle at 40% 60%, #38bdf8, #2563eb);
+	animation: float3 26s ease-in-out infinite;
+}
+
+#blob-bg .blob-4 {
+	background: radial-gradient(circle at 50% 50%, #4ade80, #16a34a);
+	animation: float4 20s ease-in-out infinite;
+}
+
+@keyframes float1 {
+	0%,
+	100% {
+		transform: translate(0, 0) scale(1);
+	}
+	50% {
+		transform: translate(60px, 40px) scale(1.1);
+	}
+}
+@keyframes float2 {
+	0%,
+	100% {
+		transform: translate(0, 0) scale(1);
+	}
+	50% {
+		transform: translate(-50px, 60px) scale(0.95);
+	}
+}
+@keyframes float3 {
+	0%,
+	100% {
+		transform: translate(0, 0) scale(1);
+	}
+	50% {
+		transform: translate(40px, -50px) scale(1.05);
+	}
+}
+@keyframes float4 {
+	0%,
+	100% {
+		transform: translate(0, 0) scale(1);
+	}
+	50% {
+		transform: translate(-30px, -40px) scale(1.1);
+	}
+}
+
+/* make sure your page content sits above the background */
+body {
+	z-index: 0;
+}

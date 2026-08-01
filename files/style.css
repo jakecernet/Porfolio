@@ -92,7 +92,7 @@ header {
 
 					img {
 						transition: 0.25s;
-						filter: invert(25%) sepia(0%) saturate(0%)
+						filter: invert(60%) sepia(0%) saturate(0%)
 							hue-rotate(161deg) brightness(98%) contrast(98%);
 						width: 2.8rem;
 					}
@@ -569,4 +569,10 @@ footer {
 			}
 		}
 	}
+}
+
+@media screen and (max-width: 560px) {
+    .img{
+        display: none;
+    }
 }
